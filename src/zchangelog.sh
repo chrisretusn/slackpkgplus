@@ -81,7 +81,7 @@ function cleanup(){
         echo >> $TMPDIR/RepoChangeLog.txt
         echo "==================================" >> $TMPDIR/RepoChangeLog.txt
         if [ "$PLUGIN_ZCHANGELOG_SHOW" == "on" ];then
-          cat $TMPDIR/RepoChangeLog.txt
+          $MORECMD $TMPDIR/RepoChangeLog.txt
         fi
         cat $WORKDIR/RepoChangeLog.txt >> $TMPDIR/RepoChangeLog.txt
         cp $TMPDIR/RepoChangeLog.txt $WORKDIR/RepoChangeLog.txt
