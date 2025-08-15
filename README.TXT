@@ -14,7 +14,7 @@ https://alien.slackbook.org/blog/taking-over-maintenance-of-slackpkgplus/
 Alien Bob's fork:
 https://github.com/alienbob/slackpkgplus
 
-I will be maintaining the developnebt (devel) branch. My main focus will be to 
+I will be maintaining the development (devel) branch. My main focus will be to 
 mirror changes in the master branch of alienbob's fork to the devel branch in my 
 fork and a few minor changes specific to the devel branch. 
 
