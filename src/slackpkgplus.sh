@@ -2135,8 +2135,8 @@ if [ "$SLACKPKGPLUS" = "on" ];then
                 pname="";
                 sname="";
                 preq="";
-                delete(plist);
-                delete(rlist);
+                delete plist;
+                delete rlist;
               }
 
               if(!$0 && pname){
