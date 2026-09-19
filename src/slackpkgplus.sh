@@ -253,6 +253,7 @@ if [ "$SLACKPKGPLUS" = "on" ];then
     # Patching makelist() original function to accept pkglist-pre
   set +x
   eval "$(type makelist | sed -e $'1d;2c\\\nmakelist()\n' \
+                              -e '4iunset TOPROCESS' \
                               -e "/in package list/s/tr -d '\\\\\\\\'/tr -d '\\\\\\\\*'/" \
                               -e 's,cat ${WORKDIR}/pkglist > ${TMPDIR}/pkglist,cat $TMPDIR/pkglist-pre ${WORKDIR}/pkglist | applyblacklist > ${TMPDIR}/pkglist,' \
          )"
